@@ -2,6 +2,7 @@
   font-family: Heebo;
   src: url(fonts/static/Heebo-ExtraLight.ttf);
   font-weight: 100;
+  font-weight: lighter;
 }
 
 @font-face {
@@ -55,13 +56,56 @@
 }
 
 
-
-
 body
 {
-  margin: 0px;
+  margin: 0px auto;
   padding: 0px;
   width: 95%;
   text-align: center;
+  font-family: Heebo, sans-serif;
+  font-weight: 600;
+
+  font-size: 16px;
+
+  background-color: #ffb84d;
  
+}
+
+.main {
+  width: 98%;
+  position: relative;
+  border: .5em inset;
+  border-color: chocolate;
+  
+  margin: 5px auto;
+
+}
+
+hr {
+  width: 89%;
+  height: .5em;
+  background-color: rgb(61, 23, 1);
+  border-radius: .6em;
+
+}
+
+h1 {
+
+  text-shadow: 5px 3px 3px slategrey;
+  font-size: 4em;
+  color: rgb(25, 180, 220);
+}
+
+#offer {
+
+  font-size: 4em;
+  color: #d9d9d9;
+  text-shadow: 3px 3px 4px slategrey;
+  margin: 1.5em auto;
+  border-width: 5px;
+  border-style: outset;
+  border-radius: 25%;
+  border-color: #e77f16;
+  width: 5em;
+  background-color: #f19a43b6;
 }
