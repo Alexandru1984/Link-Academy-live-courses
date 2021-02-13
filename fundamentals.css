@@ -1,111 +1,73 @@
-@font-face {
-  font-family: Heebo;
-  src: url(fonts/static/Heebo-ExtraLight.ttf);
-  font-weight: 100;
-  font-weight: lighter;
-}
+@import url('https://fonts.googleapis.com/css2?family=Marko+One&display=swap');
 
-@font-face {
-  font-family: Heebo;
-  src: url(fonts/static/Heebo-Thin.ttf);
-  font-weight: 200;
-}
+@import url('https://fonts.googleapis.com/css2?family=Fahkwang:ital,wght@0,300;0,400;0,700;1,200;1,400;1,600&display=swap');
 
-@font-face {
-  font-family: Heebo;
-  src: url(fonts/static/Heebo-Light.ttf);
-  font-weight: 300;
-}
 
-@font-face {
-  font-family: Heebo;
-  src: url(fonts/static/Heebo-Regular.ttf0);
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: Heebo;
-  src: url(fonts/static/Heebo-Medium.ttf);
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: Heebo;
-  src: url(fonts/static/Heebo-SemiBold.ttf);
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: Heebo;
-  src: url(fonts/static/Heebo-Bold.ttf);
-  font-weight: 700;
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: Heebo;
-  src: url(fonts/static/Heebo-ExtraBold.ttf);
-  font-weight: 800;
-  font-weight: bolder;
-}
-
-@font-face {
-  font-family: Heebo;
-  src: url(fonts/static/Heebo-Black.ttf);
-  font-weight: 900;
-}
 
 
 body
 {
-  margin: 0px auto;
+  margin: 0px;
   padding: 0px;
   width: 95%;
-  text-align: center;
-  font-family: Heebo, sans-serif;
-  font-weight: 600;
+  
+  font-size: 1em;
+  background: radial-gradient(#FF6600, #CC9900);
+  font-family: 'Fahkwang', sans-serif;
 
-  font-size: 16px;
-
-  background-color: #ffb84d;
- 
 }
 
-.main {
-  width: 98%;
-  position: relative;
-  border: .5em inset;
-  border-color: chocolate;
-  
-  margin: 5px auto;
+* {
+  box-sizing: border-box;
+
+}
+
+#main-title {
+  font-size: 2em;
+  font-family: 'Marko One', serif;
+  text-align: center;
+}
+
+#title-history {
+  font-size: 2.2em;
+  text-align: center;
 
 }
 
 hr {
-  width: 89%;
-  height: .5em;
-  background-color: rgb(61, 23, 1);
-  border-radius: .6em;
-
+  align-items: center;
+  width: 90%;
+  height: .2em;
+  background-color: rgba(26, 6, 116, 0.685);
 }
 
-h1 {
-
-  text-shadow: 5px 3px 3px slategrey;
-  font-size: 4em;
-  color: rgb(25, 180, 220);
+nav {
+  text-align: center;
+}
+#about-us {
+  text-decoration: none;
+  margin: 5px 5px 0 0;
 }
 
-#offer {
+#history {
+  
+  width: 550px;
+  text-align: justify;
+  margin:0 1em 0 2em;
+  float: left;
+}
 
-  font-size: 4em;
-  color: #d9d9d9;
-  text-shadow: 3px 3px 4px slategrey;
-  margin: 1.5em auto;
-  border-width: 5px;
-  border-style: outset;
-  border-radius: 25%;
-  border-color: #e77f16;
-  width: 5em;
-  background-color: #f19a43b6;
+img[src=images] {
+
+  text-align: center;
+}
+
+.flaver {
+  text-align: center;
+}
+
+.about {
+  text-align: justify;
+  padding: .5em;
+  margin-left: 1em;
 }
