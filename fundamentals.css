@@ -3,6 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Fahkwang:ital,wght@0,300;0,400;0,700;1,200;1,400;1,600&display=swap');
 
 
+* {
+  box-sizing: border-box;
+
+}
 
 
 body
@@ -17,22 +21,12 @@ body
 
 }
 
-* {
-  box-sizing: border-box;
-
-}
-
 #main-title {
   font-size: 2em;
   font-family: 'Marko One', serif;
   text-align: center;
 }
 
-#title-history {
-  font-size: 2.2em;
-  text-align: center;
-
-}
 
 hr {
   align-items: center;
@@ -44,18 +38,12 @@ hr {
 nav {
   text-align: center;
 }
+
 #about-us {
   text-decoration: none;
   margin: 5px 5px 0 0;
 }
 
-#history {
-  
-  width: 550px;
-  text-align: justify;
-  margin:0 1em 0 2em;
-  float: left;
-}
 
 img[src=images] {
 
@@ -66,8 +54,31 @@ img[src=images] {
   text-align: center;
 }
 
+
+
+/*Here ends first page*/
+
+/* this is About us page*/
+
+#title-history {
+  font-size: 2.2em;
+  text-align: center;
+
+}
+#history {
+  
+  width: 550px;
+  text-align: justify;
+  margin:0 1em 0 2em;
+  float: left;
+}
+
 .about {
   text-align: justify;
   padding: .5em;
   margin-left: 1em;
 }
+
+
+
+/*Here ends About us page*/
