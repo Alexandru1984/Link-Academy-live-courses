@@ -3,80 +3,205 @@
 @import url('https://fonts.googleapis.com/css2?family=Fahkwang:ital,wght@0,300;0,400;0,700;1,200;1,400;1,600&display=swap');
 
 
+/* this is the reset  */
 * {
-  box-sizing: border-box;
-
-}
-
-
-body
-{
   margin: 0px;
   padding: 0px;
-  width: 95%;
-  
-  font-size: 1em;
-  background: radial-gradient(#FF6600, #CC9900);
-  font-family: 'Fahkwang', sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none; 
+  font-family: 'Fahkwang', sans-serif; 
+}
 
+body {
+   background: radial-gradient(#FF6600, #CC9900);
 }
 
 #main-title {
   font-size: 2em;
-  font-family: 'Marko One', serif;
+  font-family: 'Marko One', sans-serif;
   text-align: center;
+  text-shadow: 2px 2px 4px gray;
+  padding: .7em 0 .7em 0;
 }
 
+#moto {
+  position: relative;
+  color: darkblue;
+  font-size: 1em;
+  font-weight: 600;
+  font-style: italic;
+  text-align: center;
+  margin: 1em 0;
+  animation-name: hiden;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes hiden {
+  0% {
+    visibility: visible;
+  }
+
+  25% {
+    visibility: hidden;
+    transform: scale(0,0);
+  }
+
+  50% {
+    visibility: visible;
+    color: rgb(53, 52, 52);
+    transform: scale(1,1);
+  }
+
+  75% {
+    visibility: hidden;
+    transform: scale(0,0);
+  }
+
+  100% {
+    visibility: visible;
+  }
+}
 
 hr {
-  align-items: center;
+  margin: 0 auto;
   width: 90%;
-  height: .2em;
-  background-color: rgba(26, 6, 116, 0.685);
+  height: .3em;
+  background-color: rgba(34, 10, 143, 0.685);
+  margin: .8em 0;
 }
 
-nav {
-  text-align: center;
+#header {
+  background-color: #6967e4;
+  height: 4em;
+  border-radius: .8em;
+  font-size: 1.2em;
+  margin: .5em 0;
+  position: sticky;
+  top: 0;
+ 
 }
 
-#about-us {
+#logo {
+  width: 180px;
+  height: 4em;
+  display: inline-block;
+  margin: 0 auto;
+  padding: .5em 0 0 .5em;
+}
+
+#image-logo {
+  width: 120px;
+  height: 60px;
+  margin: 0 0 0 .5em;
+  background-color: rgba(47, 61, 255, 0.164);
+  border-radius: .3em;
+  padding: 0 .5em 0 0;
+}
+
+#nav-list {
+  display: inline-block;
+  margin: 0 auto;
+  height: 60px;
+  vertical-align: middle;
+  padding-bottom: .8em;
+  position: absolute;
+  top: 1em;
+  left: 40%;
+}
+
+#nav-list li {
+  display: inline-block;
+  margin: 0 1em;
+}
+
+.nav-link {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: white;
+}
+.nav-link:hover {
+  color: lightblue;
+  border-bottom: 3px outset lightblue;
+}
+
+#cafe-flaver {
+  position: relative;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#home-page {
   text-decoration: none;
-  margin: 5px 5px 0 0;
+  border-radius: .5em;
+  
 }
 
 
-img[src=images] {
-
-  text-align: center;
-}
-
-.flaver {
-  text-align: center;
-}
-
-
-
-/*Here ends first page*/
-
-/* this is About us page*/
 
 #title-history {
   font-size: 2.2em;
   text-align: center;
 
 }
-#history {
-  
-  width: 550px;
-  text-align: justify;
-  margin:0 1em 0 2em;
+
+.content {
+  position: relative;
+  border: 1px outset gray;
+  width: 90%;
+  margin: auto;
+}
+
+#history-image {
+  margin: 0 3em 0 1em;
   float: left;
+}
+
+#history {
+  width: 450px;
 }
 
 .about {
   text-align: justify;
-  padding: .5em;
+  padding: .2em;
   margin-left: 1em;
+  letter-spacing: .1em;
+  line-height: 1.5em;
+
 }
 
 
