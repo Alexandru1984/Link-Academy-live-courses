@@ -13,9 +13,7 @@
   font-family: 'Fahkwang', sans-serif; 
 }
 
-body {
-   background: radial-gradient(#FF6600, #CC9900);
-}
+/*here is the header*/
 
 #main-title {
   font-size: 2em;
@@ -23,6 +21,10 @@ body {
   text-align: center;
   text-shadow: 2px 2px 4px gray;
   padding: .7em 0 .7em 0;
+  background-image: url(images/header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation-name: hiden;
 }
 
 #moto {
@@ -32,74 +34,70 @@ body {
   font-weight: 600;
   font-style: italic;
   text-align: center;
-  margin: 1em 0;
+  margin: 0 auto;
+  background-image: url(images/header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   animation-name: hiden;
-  animation-duration: 10s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   animation-direction: alternate-reverse;
+
 }
 
 @keyframes hiden {
   0% {
-    visibility: visible;
+    filter: brightness(1);
   }
 
   25% {
     visibility: hidden;
-    transform: scale(0,0);
+    
   }
 
   50% {
-    visibility: visible;
-    color: rgb(53, 52, 52);
-    transform: scale(1,1);
+    color: rgba(87, 87, 87, 0.452);
+    filter: brightness(0.9);
   }
 
   75% {
-    visibility: hidden;
-    transform: scale(0,0);
+    filter: brightness(0.8);
   }
 
   100% {
-    visibility: visible;
+    filter: brightness(1);
   }
 }
 
-hr {
-  margin: 0 auto;
-  width: 90%;
-  height: .3em;
-  background-color: rgba(34, 10, 143, 0.685);
-  margin: .8em 0;
-}
+/*here end the header*/
 
+/*here start the navigation bar*/
 #header {
   background-color: #6967e4;
   height: 4em;
-  border-radius: .8em;
   font-size: 1.2em;
-  margin: .5em 0;
   position: sticky;
   top: 0;
- 
-}
+ }
 
 #logo {
-  width: 180px;
-  height: 4em;
   display: inline-block;
   margin: 0 auto;
-  padding: .5em 0 0 .5em;
+  padding-left: 5em;
+  position: absolute;
 }
 
 #image-logo {
   width: 120px;
-  height: 60px;
-  margin: 0 0 0 .5em;
-  background-color: rgba(47, 61, 255, 0.164);
-  border-radius: .3em;
+  margin: 0 0 0 .1em;
+  
   padding: 0 .5em 0 0;
+  width: 180px;
+  height: 4em;
+  border: 3px outset rgba(55, 34, 250, 0.356);
+  border-bottom-left-radius: 16%;
+  border-bottom-right-radius: 16%;
 }
 
 #nav-list {
@@ -110,7 +108,7 @@ hr {
   padding-bottom: .8em;
   position: absolute;
   top: 1em;
-  left: 40%;
+  left: 35%;
 }
 
 #nav-list li {
@@ -127,13 +125,124 @@ hr {
   color: lightblue;
   border-bottom: 3px outset lightblue;
 }
+/*here end the navigation bar*/
+
 
 #cafe-flaver {
-  position: relative;
+  background: linear-gradient(to right, rgba(163,66,37,1) 0%,rgba(163,66,37,0.94) 37%,rgba(170,121,64,0.9) 58%,rgba(128,69,26,0.86) 82%,rgba(124,65,23,0.86) 84%);
+ 
   
+  font-size: 1em;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.flaver {
+  padding: 2em;
+  text-shadow: 2px 2px 4px rgba(199, 94, 8, 0.76);
+  animation: outset 4s infinite alternate-reverse;
+  transition: transform 1.5s linear;
+}
+
+.flaver:hover {
+  cursor: pointer;
+  transform: rotateX(360deg);  
+}
+
+@keyframes outset {
+  0% {
+    color: rgb(252, 41, 41);
+    
+  }
+
+  20% {
+    color: rgba(248, 38, 38, 0.8);
+  }
+
+  40% {
+    color: rgb(250, 50, 50);
+    
+   
+  }
+
+  60% {
+    color: rgb(247, 19, 19);
+  }
+
+  80% {
+    color: rgba(177, 18, 18, 0.945);
+  }
+
+  100% {
+    color: rgb(219, 46, 3);
+    
+  }
+}
+
+#caffe-descrip{
+  width: 90%;
+  margin: 0 auto;
+}
+
+h3 {
+  margin: 1.5em;
+  font-style: italic;
+  filter: drop-shadow(2px 3px 2px rgb(68, 68, 68));
+}
+
+img[src]{
+  border-style: outset;
+}
+
+.price {
+  padding: 2em;
+
 }
 
 
+#chocolate-flaver {
+  background: linear-gradient(to right, rgba(163,66,37,1) 0%,rgba(163,66,37,0.94) 37%,rgba(170,121,64,0.9) 58%,rgba(128,69,26,0.86) 82%,rgba(124,65,23,0.86) 84%);
+  font-size: 1em;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+#chocolate-descrp {
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+#vanila-flaver {
+  background: linear-gradient(to right, rgba(163,66,37,1) 0%,rgba(163,66,37,0.94) 37%,rgba(170,121,64,0.9) 58%,rgba(128,69,26,0.86) 82%,rgba(124,65,23,0.86) 84%);
+  font-size: 1em;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+#vanila-descrip {
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+
+
+#tea-flaver {
+  background: linear-gradient(to right, rgba(163,66,37,1) 0%,rgba(163,66,37,0.94) 37%,rgba(170,121,64,0.9) 58%,rgba(128,69,26,0.86) 82%,rgba(124,65,23,0.86) 84%);
+  font-size: 1em;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+#tea-descrip {
+  width: 90%;
+  margin: 0 auto;
+}
 
 
 
